@@ -51,6 +51,7 @@
 	"types": "./dist/index.d.ts",
 	"type": "module",
 	"dependencies": {
+		"@tolgee/svelte": "^5.25.0",
 		"svelte-routing": "^2.12.0"
 	}
 }
