@@ -1,58 +1,58 @@
-# create-svelte
+# Tolgee Svelte Example
 
-Everything you need to build a Svelte library, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+A bloggging website built with Svelte and localized with [Tolgee](https://tolgee.io).
 
-Read more about creating a library [in the docs](https://kit.svelte.dev/docs/packaging).
+## Getting Started
 
-## Creating a project
+### Prerequisites
 
-If you're seeing this, you've probably already done this step. Congrats!
+To get started with this sample project make sure you have the following:
+
+- Node.js: Install [Node.js](https://nodejs.org/) on your machine if you don’t already have it installed. Use a node version manager tool like [nvm](https://github.com/nvm-sh/nvm) to install Node.js.
+- Tolgee account: You will be using Tolgee to implement localization. Hence, if you don’t have an account, please [sign-up here](https://app.tolgee.io/sign_up) to create an account.
+
+### Step 1 - Clone the repo
+
+Execute the following command in your terminal to clone the repository.
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+git clone https://github.com/harshil1712/svelte-tolgee-example.git
 ```
 
-## Developing
+### Step 2 - Install dependencies
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Install the required dependencies by running the following command.
+
+```bash
+# Navigate to the project directory
+cd svelte-tolgee-example
+
+# Install the dependencies
+npm run install
+```
+
+### Step 3 - Integrate Tolgee
+
+Follow the [step-by-step guide]() to learn how to integrate Tolgee and localize the project.
+
+Alternatively, you can switch to the `tolgee` branch to view the implementation.
+
+```bash
+git checkout tolgee
+```
+
+### Step 4 - Developing locally
+
+Start the development server with the following command.
 
 ```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-Everything inside `src/lib` is part of your library, everything inside `src/routes` can be used as a showcase or preview app.
+Navigate to `https://localhost:5137` to view the project.
 
-## Building
+## Learn More
 
-To build your library:
-
-```bash
-npm run package
-```
-
-To create a production version of your showcase app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
-
-## Publishing
-
-Go into the `package.json` and give your package the desired name through the `"name"` option. Also consider adding a `"license"` field and point it to a `LICENSE` file which you can create from a template (one popular option is the [MIT license](https://opensource.org/license/mit/)).
-
-To publish your library to [npm](https://www.npmjs.com):
-
-```bash
-npm publish
-```
+- [Svelte Documentation](https://svelte.dev/docs/introduction)
+- [Tolgee Svelte Integratoin](https://tolgee.io/integrations/svelte)
+- [Tolgee Slack Workspace](https://join.slack.com/t/tolgeecommunity/shared_invite/zt-195isb5u8-_RcSRgVJfvgsPpOBIok~IQ)
