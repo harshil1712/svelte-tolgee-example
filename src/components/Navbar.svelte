@@ -1,12 +1,15 @@
 <script>
-	import { getTolgee, getTolgeeContext } from '@tolgee/svelte';
+	import { T, getTolgee, getTolgeeContext } from '@tolgee/svelte';
+
 	const { tolgee } = getTolgeeContext();
 	const availableLanguages = tolgee.getInitialOptions().availableLanguages;
+
 	const t = getTolgee(['language'])
 
 	function handleLanguageChange(e) {
 		$t.changeLanguage(e.currentTarget.value)
 	}
+
 </script>
 
 <nav class="bg-white shadow">
@@ -16,9 +19,9 @@
 				My Blog
 			</div>
 			<div class="space-x-4">
-				<a href="/" class="text-gray-600 hover:text-gray-900">Home</a>
-				<a href="#" class="text-gray-600 hover:text-gray-900">About</a>
-				<a href="#" class="text-gray-600 hover:text-gray-900">Contact</a>
+				<a href="/" class="text-gray-600 hover:text-gray-900"><T keyName="navigation_home" defaultValue="Home" /></a>
+				<a href="#" class="text-gray-600 hover:text-gray-900"><T keyName="navigation_about" defaultValue="About" /></a>
+				<a href="#" class="text-gray-600 hover:text-gray-900"><T keyName="navigation_contact" defaultValue="Contact" /></a>
 			</div>
 			<div id="switch">
 				<select value={$t.getLanguage()} on:change={handleLanguageChange}>
@@ -27,6 +30,7 @@
 					{/each}
 				</select>
 			</div>
+
 		</div>
 	</div>
 </nav>
