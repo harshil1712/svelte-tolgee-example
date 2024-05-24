@@ -6,7 +6,7 @@
 		.use(DevTools())
 		.use(FormatSimple())
 		.init({
-			language: 'en',
+			defaultLanguage: 'en',
 			apiUrl: import.meta.env.VITE_TOLGEE_API_URL,
 			apiKey: import.meta.env.VITE_TOLGEE_API_KEY,
 			availableLanguages: ['en', 'de']
